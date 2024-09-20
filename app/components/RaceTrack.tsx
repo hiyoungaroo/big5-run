@@ -16,7 +16,7 @@ export default function RaceTrack({ animals, results, isRacing, onFinish }: Prop
       const interval = setInterval(() => {
         setPositions((prev) => 
           prev.map((pos, index) => {
-            if (pos >= 90) return pos; // 이미 90%에 도달한 동물은 움직이지 않음
+            if (pos >= 90) return pos;
             const newPos = Math.min(pos + Math.random() * 2, 90);
             if (newPos === 90 && !results.some(r => r.animalId === animals[index].id)) {
               onFinish(animals[index].id);
