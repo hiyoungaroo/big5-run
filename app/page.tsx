@@ -4,7 +4,6 @@ import { useState, useCallback } from 'react'
 import AnimalSelection from './components/AnimalSelection'
 import RaceTrack from './components/RaceTrack'
 import { Animal, RaceResult } from './types'
-import { animals } from './data/animals'
 
 export default function Home() {
   const [selectedAnimals, setSelectedAnimals] = useState<Animal[]>([])
