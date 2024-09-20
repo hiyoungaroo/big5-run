@@ -1,5 +1,5 @@
 import { Animal } from '../types'
-import { animals } from '../data/animals'
+import { animals } from '../data/animals'  // 여기서 animals를 import 합니다
 
 interface Props {
   onSelect: (animals: Animal[]) => void

@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import AnimalSelection from './components/AnimalSelection'
 import RaceTrack from './components/RaceTrack'
 import { Animal, RaceResult } from './types'
+// import { animals } from './data/animals'  // 이 줄을 제거하거나 주석 처리하세요
 
 export default function Home() {
   const [selectedAnimals, setSelectedAnimals] = useState<Animal[]>([])
