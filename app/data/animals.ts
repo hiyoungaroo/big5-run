@@ -11,4 +11,6 @@ export const animals: Animal[] = [
   { id: 8, name: '돼지', image: '/images/pig.png' },
   { id: 9, name: '호랑이', image: '/images/tiger.png' },
   { id: 10, name: '유니콘', image: '/images/unicorn.png' },
+  { id: 11, name: '거북이', image: '/images/turtle.png' },
+  { id: 12, name: '개구리', image: '/images/frog.png' },
 ]

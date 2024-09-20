@@ -36,8 +36,8 @@ export default function Home() {
   }
 
   return (
-    <main className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">BIG5 RUN</h1>
+    <main className="container mx-auto p-4 md:max-w-4xl">
+       <h1 className="text-2xl md:text-3xl font-bold mb-4 text-center">BIG5 Run</h1>
       {!isRacing && results.length === 0 && (
         <AnimalSelection
           onSelect={setSelectedAnimals}
@@ -56,7 +56,7 @@ export default function Home() {
       {!isRacing && results.length > 0 && (
         <button
           onClick={resetGame}
-          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded w-full md:w-auto md:mx-auto md:block"
         >
           처음부터
         </button>
